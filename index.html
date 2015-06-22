@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section id="intro">
+					<h1>Gender Imbalance</h1>
+					<h3>and the understated importance of mentoring in technology</h3>
+					<p>
+						<small>a presentation by Jennifer Wadella / <a href="http://twitter.com/likeOMGitsFEDAY">@likeOMGitsFEDAY</a></small>
+					</p>
+				</section>
+
+				<section id="transition">
+					<h2>But First ....</h2>
+					<aside class="notes">
+						Please be sure to thank sponsors who helped make this conference possible.
+					</aside>
+				</section>
+				<section id="sponsors" data-background="images/sponsors.png">
+				</section>
+				<section id="about">
+					<section>
+						<h2>About Me</h2>
+						<p>Jennifer Wadella <a href="http://twitter.com/likeOMGitsFEDAY">@likeOMGitsFEDAY</a></p>
+						<ul>
+							<li>Graphic Design &amp; Business Management from Drake University. (lulz)</li>
+							<li>Self-taught JavaScript developer</li>
+							<li>Community Organizer</li>
+							<li>Founder of Kansas City Women in Technology</li>
+						</ul>
+						<aside class="notes">
+							About me.
+						</aside>
+					</section>
+					<section>
+						<h2>Programs I've launched</h2>
+						<img src="images/programs.png" />
+						<aside class="notes">
+							KCWiT, CoderDojoKC, Midwest Dev Chat, Coding &amp; Cupcakes, Coding &amp; Cocktails
+						</aside>
+					</section>
+				</section>
+				<section id="overview">
+					<h2>Goal of this talk:</h2>
+					<p><i>empower you to improve diversity in technology.</i></p>
+					<br />
+					<ul>
+						<li class="fragment">History of women in programming.</li>
+						<li class="fragment">What happened?</li>
+						<li class="fragment">Current programs helping solve the diversity problem.</li>
+						<li class="fragment">How to improve your workplace.</li>
+						<li class="fragment">How to attract female candidates.</li>
+						<li class="fragment">How to encourage mentoring.</li>
+						<li class="fragment">Resources to learn more.</li>
+					</ul>
+					<aside class="notes">
+						<p>I run a women in tech group. I read articles everyday. I research about why more women aren't in tech. I research how to GET more women in tech. I hear about programs doing amazing things. My social medias feeds are finely honed to put anything relevant on my radar. I want to give you all that information to use to help understand why there's a lack of diversity in tech, but more importantly, how you can help.</p>
+						<p>History of women in programming. Today programming is very male-dominated, and wild theories that women aren't as adept at math and science fly rampant. Clearly this didn't use to be the case. We'll talk about some women who pioneered the industry.</p>
+					</aside>
+				</section>
+				<section id="historyofwomen">
+					<section>
+						<h2>History of Women in Programming</h2>
+						<ul>
+							<li class="fragment">Ada Lovelace</li>
+							<li class="fragment">Grace Hopper</li>
+							<li class="fragment">Erna Schnieder Hoover</li>
+						</ul>
+						<aside class="notes">
+							<p>Arguments still used today proclaim that more women aren't in tech because they don't excel at math and logic. Don't believe me? Spend sometime reading the comments on any article discussion gender imbalance in tech. I'm going to share with you the stories of a couple women who helped pioneer computer science the next time you see that argument used. </p>
+						</aside>
+					</section>
+					<section id="adalovelace">
+						<h2>Ada Lovelace</h2>
+						<img src="images/ada.jpg" />
+						<blockquote cite="http://nlcatp.org/30-incredible-ada-lovelace-quotes/">
+							&ldquo;The more I study, the more insatiable do I feel my genius for it to be.&rdquo;
+						</blockquote>
+						<aside class="notes">
+							<p>Though computers didn't technically exist at the time, Ada Lovelace is credited with being a pioneer of computer science. She wrote the first algorithm in history, which theoretically would calculate numbers on the Analytical Engine. Ada described how to use punch cards to enter number. She was a revoluntionary thought leader with the foresight of what computers COULD do, and understanding of the possibilities that entailed. Her predictions indcludes the use of computers to create music and graphics, and have scientific uses.</p>
+						</aside>
+					</section>
+					<section id="gracehopper">
+						<h2>Grace Hopper</h2>
+						<img src="images/gracehopper.jpg" />
+						<blockquote cite="http://womenshistory.about.com/od/quotes/a/grace_hopper.htm">
+							&ldquo;The most dangerous phrase in the language is, "We've always done it this way.&rdquo;
+						</blockquote>
+						<aside class="notes">
+							<p>There's a conference named after her for good reason. Grace Hopper was a Vassar College graduate with a BA in mathematics and physics, and upon entering the Navy became the 3rd person to program the Mark 1 computer. Working with computers, Grace theorized more people(read: non-mathmeticians) would be able to use them if they were able to be interacted with an a more humanized, readable way. She created what may be considered the first compiler: FLOW-MATIC, intended to complete tasks like billing and payroll based on english commands. She continued to advocate for human readable programming languages and was paramount in creating validation tools and internation standards for programming languages.</p>
+							<p>It was hard picking a quote from her, she was a serious badass and said a lot of things that are 100% relevant today</p>
+						</aside>
+					</section>
+					<section id="ernaschniederhoover">
+						<h2>Erna Schnieder Hoover</h2>
+						<img src="images/erna_hoover.png" />
+						<blockquote cite="http://mentalfloss.com/article/53181/inspiring-quotes-10-influential-women-tech">
+							&ldquo;I designed the executive program for handling situations when there are too many calls, to keep it operating efficiently without hanging up on itself. Basically it was designed to keep the machine from throwing up its hands and going berserk.&rdquo;
+						</blockquote>
+						<aside class="notes">
+							<p>You may not have heard of Erna Schnieder Hoover, but you may as well call her the mother of telecommunications. Erna was a mathmetician, who when working at Bell Labs, invented the stored program control system, which was one of the first software patents ever recieved. </p>
+							<p>In the 1950's, when you went to make a phone call, an operator would ask you what number you could like to call, and manually connect you using a switchboard and array of cords, plugs, and switches. Large numbers of incomming calls would overload the switchboards being manually answered by phone operators. </p>
+							<p>Erna's invention was a computer system that monitored incoming call rates and automatically adjusted call's acceptance rate, largely eliminating overloading problems. This was the first of many computer programs Erna created to improve and maintain the quality of telecom services Bell provided.  </p>
+							<p>Interesting note, Erna's husband, Charles Wilson Hoover, Jr., was extremely supportive of her career, though that was the opposite of desired wife behavior in the 1950's.</p>
+						</aside>
+					</section>
+				</section>
+				<section id="whathappened">
+					<section>
+						<h2>What Happened?</h2>
+						<img src="images/1984.png" />
+						<aside class="notes">
+							<p>So we've highlighten some women rocking out in tech well into the 1950's. Computer science programs started popping up in university all over the country, including Columbia, Cambridge, and Harvard. And women are enrolling in them. </p>
+							<p>Then, in 1984 we seea steep decline in women enrolling in computer science. What the heck happened?</p>
+						</aside>
+					</section>
+					<section id="computersmarketed">
+						<h2>Computers for homes were produced ... and only marketed to boys</h2>
+						<aside class="notes">
+							<p>In the 1990s, Jane Margolis, a researcher, interviewed hundreds of computer science students at Carnegie Mellon University, one of the first universities to implement a computer science program. The research showed that families were much more likely to buy computers for boys than for girls — even when their girls were really interested in computers.</p>
+							<p>Why was this a problem? Because as personal computers became more common, computer science professors increasingly assumed that their students had grown up playing with computers at home, and suddenly women who didn't grow up playing on computers were expected to know things that the boys who were given computers did.</p>
+						</aside>
+					</section>
+					<section id="marketingfails">
+						<h2>RadioShack 1980's Ad</h2>
+						<video data-autoplay class="stretch">
+						    <source data-src="images/80RadioShackCommercial.mp4" type="video/mp4" />
+						</video>
+					</section>
+					<section id="continuedmarketingfail">
+						<h2>Today: marketers continue to screw the pooch</h2>
+						<div class="slideShow">
+							<img src="images/diamonds.jpg" alt="" class="right image-slideshow fragment current-visible">
+							<img src="images/math-subject.jpg" alt="" class="left image-slideshow fragment current-visible">
+							<img src="images/brotherhomework.jpg" alt="" class="right image-slideshow fragment current-visible">
+							<img src="images/too-pretty.jpg" alt="" class="left image-slideshow fragment current-visible">
+							<img src="images/allergic-algebra.jpg" alt="" class="left image-slideshow fragment current-visible">
+						</div>						
+						<aside class="notes">
+							<p>So not only since 1980 has tech been almost exclusive, we're seeing anti-STEM propeganda for girls. </p>
+							<p>Check out these awesome shirts marketed to girls, then ask why more women aren't in STEM. The last one is from forever-21, and incredibly popular clothing store for girls.</p>
+							<p>It doesn't help that when I was a growing up I saw plenty of t-shirts for me saying "math is hard" or "I'm pretty, so I make my brother do my homework for me". </p>
+						</aside>
+					</section>
+					<section id="computerengineerbarbie">
+						<h2>Even some of the good engagement attempts are disasterous</h2>
+							<img class="fragment" src="images/barbie/barbie-cover.jpg" alt="">
+						<aside class="notes">
+							<p>This looks promising, right? Wait for it ...</p>
+						</aside>		
+					</section>
+					<section id="page1" data-background="images/barbie/barbie1.jpg" data-background-size="600px">
+						<h2 class="fragment">Ok, that's a good start.</h2>
+					</section>
+					<section id="page2" data-background="images/barbie/barbie2.jpg" data-background-size="600px">
+						<h2 class="fragment">Wait, wat?</h2>
+					</section>
+					<section id="page3" data-background="images/barbie/barbie3.jpg" data-background-size="600px">
+					</section>
+					<section id="pageforfuckssake" data-background="images/barbie/barbie4.jpg" data-background-size="600px">
+					</section>
+					<section id="pagestaaaaaahp" data-background="images/barbie/barbie5.jpg" data-background-size="600px">
+					</section>
+					<section id="mattelcoverup">
+						<h2>Mattel has since pulled this book from shelves.</h2>
+							<img src="images/barbie/barbie-cover-x.jpg" alt="">
+						<p>Fortunately, you can rewrite this book via <a href="https://computer-engineer-barbie.herokuapp.com/">Feminist Hacker Barbie</a></p>
+						<aside class="notes">
+							<p>Mattel has since pulled this from shelves and issued an apologetic statement. Fortunately, you can rewrite this book via Feminist Hacker Barbie</p>
+						</aside>		
+					</section>
+					<section id="marketingtldr">
+						<h2>tl;dr: girls are being told the exact OPPOSITE from boys when it comes to exploring STEM. </h2>
+						<img src="images/fail_whale.png" alt="" class="fragment">
+					</section>
+					<section id="brightgirls">
+						<h2>The Trouble With Bright Girls</h2>
+						<img src="images/girl.jpg" alt="">
+						
+						<div class="fragment">
+							<p>&ldquo;Bright girls believe that their abilities are innate and unchangeable, while bright boys believe that they can develop ability through effort and practice.&rdquo;</p>
+							<small><a href="https://www.psychologytoday.com/blog/the-science-success/201101/the-trouble-bright-girls">https://www.psychologytoday.com/blog/the-science-success/201101/the-trouble-bright-girls</a></small>
+						</div>
+						<aside class="notes">
+							<p>One of the best articles I've ever read is called "The Trouble with Bright Girls". The article discusses the research of psychologist Carol Dweck, who investigated how bright 5th grade boys and girls handled difficult and confusing new material. The results were troubling - the higher the girl's IQ, the more quickly she gave up, where as boys were energized by the challenge and would increase their efforts.</p>
+							<p>Bright girls believe that their abilities are innate and unchangeable, while bright boys believe that they can develop ability through effort and practice.</p>
+							<p>The likely cause is the way they have been spoken to as children. Girls mature more quickly, are more discipline, and feedback praises them for being good, well-behaved, pretty, intelligent. Boys, who are often more rambunctious are encouraged to "try harder", instead of being praised for already attained skills. </p>
+							<p>This feedback loop is dangeruos, because girls believe their attributes they are praised for are innate, therefor unable to change. Boys, on the otherhand learn to simply work harder.</p> <p>This article BLEW MY MIND. I was a bright girl. I was praised for my intelligence. I breezed through AP level courses, and wasn't challenged until I got to college. I began flunking econ, was constantly bawling on the phone to my mother about my own incompetence, unable to understand why I wasn't smart enough.</p>
+							<p>Technology is a very intelligent field, filled with very intelligent people. Except most of those people are men, and as a women who's been praised for intelligence instead of the ability to improve, it's easy to fall prey to the idea that we're not smart enough to be there.</p>
+						</aside>
+					</section>
+				</section>
+				<section id="programs">
+					<section id="solving">
+						<h2>Current programs solving the gender issue.</h2>				
+					</section>
+					<section id="programlogos" data-background="images/other-programs.png">
+					</section>
+					<section id="she++">
+						<img src="images/logos/she++.png" />
+						<br />
+						<a href="http://twitter.com/sheplusplus">@sheplusplus</a>
+						<br />
+						<p>SHE++ is a social enterprise that empowers women to make their mark on the technology industry. We believe that when women are equally represented in technology development, we accelerate innovation for those who need it most.</p>
+					</section>
+					<section id="girldevelopit">
+						<img src="images/logos/gdi.png" />
+						<br />
+						<a href="http://twitter.com/girldevelopit">@girldevelopit</a>
+						<br />
+						<p>Girl Develop It is a nonprofit organization that exists to provide affordable and judgment-free opportunities for women interested in learning web and software development. Through in-person classes and community support, Girl Develop It helps women of diverse backgrounds achieve their technology goals and build confidence in their careers and their every day lives.</p>
+					</section>
+					<section id="girlswhocode">
+						<img src="images/logos/gwc-logo.png" />
+						<br />
+						<a href="http://twitter.com/girlswhocode">@girlswhocode</a>
+						<br />
+						<p>Girls Who Code programs work to inspire, educate, and equip girls with the computing skills to pursue 21st century opportunities.</p>
+					</section>
+					<section id="blackgirlscode">
+						<img src="images/logos/bgc2.png" />
+						<br />
+						<a href="http://twitter.com/blackgirlscode">@blackgirlscode</a>
+						<br />
+						<p>Black Girls Code's vision is to increase the number of women of color in the digital space by empowering girls of color ages 7 to 17 to become innovators in STEM fields, leaders in their communities, and builders of their own futures through exposure to computer science and technology.</p>
+					</section>
+					<section id="hackbright">
+						<img src="images/logos/hackbright.png" />
+						<br />
+						<a href="http://twitter.com/hackbright">@Hackbright</a>
+						<br />
+						<p>Hackbright Academy is the leading software engineering school for women founded in San Francisco in 2012. The academy graduates more female engineers than Stanford and UC Berkeley each year.</p>
+					</section>
+					<section id="pyladies">
+						<img src="images/logos/pyladies.png" />
+						<br />
+						<a href="http://twitter.com/pyladies">@pyladies</a>
+						<br />
+						<p>Pyladies is an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.</p>
+					</section>
+					<!-- <section id="djangogirls">
+						<img src="images/logos/djangogirls.png" />
+						<br />
+						<a href="http://twitter.com/djangogirls">@djangogirls</a>
+						<br />
+						<p>Django Girls is a non-profit organization that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. It was born in Berlin and started by two Polish girls: Ola Sitarska and Ola Sendecka.</p>
+					</section> -->
+					<section id="ncwit">
+						<img src="images/logos/ncwit.png" />
+						<br />
+						<a href="http://twitter.com/ncwit">@ncwit</a>
+						<br />
+						<p>National Center for Women &amp; Information Technology (NCWIT) is a non-profit community of more than 600 universities, companies, non-profits, and government organizations nationwide working to increase women’s participation in computing and technology. NCWIT equips change leaders with resources for taking action in recruiting, retaining, and advancing women from K–12 and higher education through industry and entrepreneurial careers. </p>
+					</section>
+					<section id="gracehopperconf">
+						<img src="images/logos/gracehopperconf.png" />
+						<br />
+						<a href="http://twitter.com/anitaborg_org">@anitaborg_org</a>
+						<br />
+						<p>The Grace Hopper Celebration of Women in Computing is the World's Largest Gathering of Women Technologists. It is produced by the Anita Borg Institute and presented in partnership with ACM.</p>
+					</section>
+					<section id="programlogos2" data-background="images/other-programs.png">
+						<aside class="notes">
+							<p>These organizations are just some of the few aiming to improve diversity in tech. They all offer fantastic resources, statistics, and curriculum, have locations all of the US, and world, and are great starting points for girls or women wanting to get into tech. Many also offer structures to create local chapters to easily bring their programming to your city.</p>
+						</aside>
+					</section>
+				</section>
+				<section id="workplace">
+					<section id="improvementoverview">
+						<h2>How to improve your workplace.</h2>
+						<ul>
+							<li>Have women in leadership roles</li>
+							<li>Develop a mentorship program</li>
+							<li>Create a diversity support group</li>
+							<li>Watch your 'wage gap'</li>
+							<li>Revise HR policy</li>
+							<li>Advocate for better maternity/paternity leave policies</li>
+							<li>Provide facilities for new mothers</li>
+							<li>Offer Flex Time</li>
+							<li>Give employees hours to donate towards community service</li>
+						</ul>
+						<aside class="notes">
+							<p>Salesforce.com CEO Marc Benioff has been headling lately with his announcement of personally reviewing employee salaries to ensure equal pay among his male and female employees. Watch your wage gap. Any report you see shows a disparity in pay between men and women, sometimes as much as 30%. It's a problem that is slowly being resolved, now that attention has been drawn to it, so we're on the right track. </p>
+							<p>Revise your HR policy</p>
+						</aside>
+					</section>
+					<section id="womenleadership">
+						<h2>Have women in leadership roles</h2>
+						<aside class="notes">
+							<p>Women in leadership roles is a no-brainer. However, do not interprut this as put "any women in a leadership role". This will do more harm than good. Instead pay attention to women who may have leadership potential but don't bring it to your attention in the ways you'd expect. Men are more likely to boast their achievements that make them promotion-worthy, and women are more likely to be quiet and humble in regards to theirs. I'll talk about the book Lean In later, but it explains this phenomenon at great length.</p>
+						</aside>
+					</section>
+					<section id="mentorship">
+						<h2>Develop a mentorship program</h2>
+						stats here
+						<aside class="notes">
+							<p>Creating a mentorship program can be huge. Women mentors are great, as young women can related to them on certain issues, like balancing a family. However, men are just as capable of giving great mentorship.</p>
+						</aside>
+					</section>
+					<section id="mentorship">
+						<h2>Create a diversity support group</h2>
+						stats here
+						<aside class="notes">
+							<p>Create a diversity support group. It could be a weekly luncheon, it could be a career-focused book dicussion group, or something much more informal. Until numbers skew more evenly in tech companies these groups provide solidarity for women.</p>
+						</aside>
+					</section>
+				</section>
+
+				<section id="attractfemalecandidates">
+					<h2>How to attract female candidates.</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+				<section id="resources">
+					<h2>Resources:</h2>
+					<ul>
+						<li class="fragment">Lean In. </li>
+					</ul>
+					<aside class="notes">
+						<p>Read Lean In. I'm not kidding. </p>
+					</aside>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
