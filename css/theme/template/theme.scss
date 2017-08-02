@@ -71,6 +71,10 @@ body {
 	line-height: 1.3;
 }
 
+.small {
+	font-size: 50%;
+}
+
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
@@ -267,7 +271,7 @@ body {
 	// border: 4px solid $mainColor;
 
 	// box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-	
+
 }
 
 	.reveal a img {
@@ -364,4 +368,3 @@ body {
 .reveal .slide-number {
 	color: $linkColor;
 }
-
